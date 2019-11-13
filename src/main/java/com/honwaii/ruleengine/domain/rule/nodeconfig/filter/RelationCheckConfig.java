@@ -1,9 +1,8 @@
-package com.honwaii.ruleengine.domain.rule.nodeconfig;
+package com.honwaii.ruleengine.domain.rule.nodeconfig.filter;
 
+import com.honwaii.ruleengine.domain.rule.nodeconfig.BaseNodeConfig;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-
-import java.util.List;
 
 @Data
 public class RelationCheckConfig extends BaseNodeConfig {
