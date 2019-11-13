@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RestController
 @RequestMapping("/v2")
-public class RuleNodeController {
+public class RuleNodeConfigController {
     @ApiOperation(value = "根据id获取规则链")
     @RequestMapping(value = "/ruleNode/", method = RequestMethod.GET)
     @ResponseBody
