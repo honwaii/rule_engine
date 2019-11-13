@@ -1,11 +1,12 @@
 package com.honwaii.ruleengine.controller;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import com.honwaii.ruleengine.domain.api.*;
 import com.honwaii.ruleengine.domain.rule.RuleChain;
 import com.honwaii.ruleengine.domain.rule.RuleChainMetaData;
 import com.honwaii.ruleengine.domain.rule.TestScript;
-import io.swagger.annotations.*;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
