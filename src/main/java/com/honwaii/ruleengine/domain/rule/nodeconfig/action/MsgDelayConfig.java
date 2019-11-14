@@ -17,4 +17,6 @@ public class MsgDelayConfig extends BaseNodeConfig {
     private int periodInSeconds;
     @ApiModelProperty(value = "消息延迟队列大小设定", required = true)
     private int maxPendingMsgs;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

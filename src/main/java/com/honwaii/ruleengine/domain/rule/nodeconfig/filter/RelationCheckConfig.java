@@ -16,4 +16,6 @@ public class RelationCheckConfig extends BaseNodeConfig {
     private String relationType;
     @ApiModelProperty(value = "是否检查定的实体")
     private boolean checkForSingleEntity;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

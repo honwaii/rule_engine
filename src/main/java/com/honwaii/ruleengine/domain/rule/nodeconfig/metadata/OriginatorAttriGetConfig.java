@@ -12,4 +12,6 @@ public class OriginatorAttriGetConfig extends BaseNodeConfig {
     private List<String> attributeNames;
     @ApiModelProperty("只要有一个属性不存在，则将消息发送到失败链")
     private boolean tellFailureIfAbsent;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

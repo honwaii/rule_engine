@@ -18,4 +18,6 @@ public class MsgCountConfig extends BaseNodeConfig {
     private String telemetryPrefix;
     @ApiModelProperty(value = "消息统计的时间间隔", required = true)
     private int interval;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

@@ -15,4 +15,6 @@ import lombok.Data;
 public class LogNodeConfig extends BaseNodeConfig {
     @ApiModelProperty(value = "消息日志的脚本定义(将消息经脚本处理后写入到终端管理的日志中)", required = true)
     private String jsScript;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

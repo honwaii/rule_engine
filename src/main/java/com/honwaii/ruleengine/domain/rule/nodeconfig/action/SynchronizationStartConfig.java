@@ -1,6 +1,7 @@
 package com.honwaii.ruleengine.domain.rule.nodeconfig.action;
 
 import com.honwaii.ruleengine.domain.rule.nodeconfig.BaseNodeConfig;
+import io.swagger.annotations.ApiModelProperty;
 
 /**
  * @ClassName SynchronizationStartConfig
@@ -10,4 +11,6 @@ import com.honwaii.ruleengine.domain.rule.nodeconfig.BaseNodeConfig;
  * @Version 1.0
  **/
 public class SynchronizationStartConfig extends BaseNodeConfig {
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

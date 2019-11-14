@@ -14,4 +14,6 @@ public class MessageCheckConfig extends BaseNodeConfig {
     private List<String> metadataNames;
     @ApiModelProperty(value = "是否检查所有的属性")
     private boolean checkAllKeys;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

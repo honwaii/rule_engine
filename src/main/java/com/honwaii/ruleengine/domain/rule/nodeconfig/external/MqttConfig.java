@@ -27,5 +27,6 @@ public class MqttConfig extends BaseNodeConfig {
     private String username;
     @ApiModelProperty(value = "密码，为绿洲mqtt服务器时，不用填写")
     private String password;
-
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

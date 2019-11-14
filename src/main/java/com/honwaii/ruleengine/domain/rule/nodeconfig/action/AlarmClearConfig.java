@@ -18,4 +18,6 @@ public class AlarmClearConfig extends BaseNodeConfig {
     private String alarmType;
     @ApiModelProperty(value = "根据脚本定义告警清除的详情")
     private String alarmDetailsBuildJs;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

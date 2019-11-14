@@ -18,4 +18,6 @@ public class MsgToEmailConfig extends BaseNodeConfig {
     private String subjectTemplate;
     @ApiModelProperty(value = "邮件内容", required = true)
     private String bodyTemplate;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

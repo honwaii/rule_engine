@@ -20,4 +20,6 @@ public class AlarmCreateConfig extends BaseNodeConfig {
     private String alarmDetailsBuildJs;
     @ApiModelProperty(value = "告警的严重程度")
     private String severity;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

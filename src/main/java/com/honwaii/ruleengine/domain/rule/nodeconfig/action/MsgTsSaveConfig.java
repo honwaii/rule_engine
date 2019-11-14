@@ -15,4 +15,6 @@ import lombok.Data;
 public class MsgTsSaveConfig extends BaseNodeConfig {
     @ApiModelProperty(value = "时序数据的过期时间(秒)，0 - 表示不过期)")
     private long defaultTTL;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

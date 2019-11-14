@@ -35,4 +35,6 @@ public class KafkaConfig extends BaseNodeConfig {
     private String valueSerializer;
     @ApiModelProperty(value = "kafka生产者的其他配置")
     private Map<String, String> otherProperties;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

@@ -22,4 +22,6 @@ public class TelemetryGetConfig extends BaseNodeConfig {
     private String orderBy; //ASC, DESC,
     @ApiModelProperty(value = "需要返回时序数据的名称", required = false)
     private List<String> latestTsKeyNames;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

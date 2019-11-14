@@ -1,6 +1,7 @@
 package com.honwaii.ruleengine.domain.rule.nodeconfig.external;
 
 import com.honwaii.ruleengine.domain.rule.nodeconfig.BaseNodeConfig;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
@@ -12,5 +13,6 @@ import lombok.Data;
  **/
 @Data
 public class EmailSendConfig extends BaseNodeConfig {
-    
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

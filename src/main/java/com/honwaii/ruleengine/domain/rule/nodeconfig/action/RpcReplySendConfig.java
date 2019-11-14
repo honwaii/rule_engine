@@ -15,4 +15,6 @@ import lombok.Data;
 public class RpcReplySendConfig extends BaseNodeConfig {
     @ApiModelProperty(value = "rpc请求id的名称设置，默认名称是requestId", required = true)
     private String requestIdMetaDataAttribute;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

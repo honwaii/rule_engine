@@ -20,6 +20,8 @@ public class DeviceAttriGetConfig extends BaseNodeConfig {
     private String relationType;
     @ApiModelProperty("设备类型")
     private List<String> deviceTypes;
-//    @ApiModelProperty("需要添加到消息中的属性名")
+    //    @ApiModelProperty("需要添加到消息中的属性名")
 //    private boolean fetchLastLevelOnly;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

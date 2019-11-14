@@ -40,4 +40,6 @@ public class RabbitMqConfig extends BaseNodeConfig {
     private int handshakeTimeout;
     @ApiModelProperty(value = "客户端属性")
     private Map<String, String> clientProperties;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }

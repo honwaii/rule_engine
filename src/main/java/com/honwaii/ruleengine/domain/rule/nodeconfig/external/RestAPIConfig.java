@@ -21,5 +21,7 @@ public class RestAPIConfig extends BaseNodeConfig {
     private String requestMethod;
     @ApiModelProperty(value = "请求头定义")
     private Map<String, String> headers;
-//    private boolean useSimpleClientHttpFactory;
+    //    private boolean useSimpleClientHttpFactory;
+    @ApiModelProperty(value = "当前规则节点的类型")
+    private String type;
 }
