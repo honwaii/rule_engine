@@ -6,10 +6,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
-public class RuleengineApplication {
+public class RuleEngineApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RuleengineApplication.class, args);
+        SpringApplication.run(RuleEngineApplication.class, args);
     }
 
 }
