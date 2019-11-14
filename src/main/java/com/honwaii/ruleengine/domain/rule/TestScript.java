@@ -7,6 +7,8 @@ import java.util.List;
 
 @Data
 public class TestScript {
+    @ApiModelProperty(value = "所属的项目的id", required = true)
+    private String projectId;
     @ApiModelProperty(value = "带调试的脚本", required = true)
     private String script;
     @ApiModelProperty(value = "脚本的类型: Filter、Transform等等", required = true)
