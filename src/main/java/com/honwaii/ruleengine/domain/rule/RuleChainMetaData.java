@@ -7,7 +7,7 @@ import java.util.List;
 
 @Data
 public class RuleChainMetaData {
-    @ApiModelProperty(value = "所属规则链id")
+    @ApiModelProperty(value = "所属规则链id", required = true)
     private String ruleChainId;
     @ApiModelProperty(value = "第一个规则节点的索引")
     private Integer firstNodeIndex;
