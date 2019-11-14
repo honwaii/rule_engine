@@ -43,7 +43,7 @@ public class SwaggerConfiguration {
                         String.class);
 
         return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("规则引擎")
+                .groupName("RuleEngine")
                 .apiInfo(apiInfo())
                 .alternateTypeRules(
                         new AlternateTypeRule(
