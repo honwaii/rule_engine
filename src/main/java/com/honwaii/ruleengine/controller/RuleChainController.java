@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
-@RequestMapping("/v2")
+@RequestMapping("/v2/ruleEngine")
 @Api
 public class RuleChainController {
     private static final String RULE_CHAIN_ID = "ruleChainId";
@@ -24,7 +24,7 @@ public class RuleChainController {
     @ResponseBody
     public ResponseRuleChain getRuleChainById(
             @ApiParam(name = "ruleChainId", value = "规则链id", required = true)
-            @PathVariable(value = RULE_CHAIN_ID) String strRuleChainId) {
+            @PathVariable(value = RULE_CHAIN_ID) String ruleChainId) {
         return null;
     }
 
@@ -33,7 +33,7 @@ public class RuleChainController {
     @ResponseBody
     public ResponseRuleChainMetadata getRuleChainMetaData(
             @ApiParam(name = "ruleChainId", value = "规则链id", required = true)
-            @PathVariable(RULE_CHAIN_ID) String strRuleChainId) {
+            @PathVariable(RULE_CHAIN_ID) String ruleChainId) {
         return null;
     }
 
@@ -49,7 +49,7 @@ public class RuleChainController {
     @ResponseBody
     public ResponseRuleChain setRootRuleChain(
             @ApiParam(name = "ruleChainId", value = "规则链id", required = true)
-            @PathVariable(RULE_CHAIN_ID) String strRuleChainId) {
+            @PathVariable(RULE_CHAIN_ID) String ruleChainId) {
         return null;
     }
 
@@ -78,7 +78,7 @@ public class RuleChainController {
     @ResponseStatus(value = HttpStatus.OK)
     public ResponseDel deleteRuleChain(
             @ApiParam(name = "ruleChainId", value = "规则链id", required = true)
-            @PathVariable(RULE_CHAIN_ID) String strRuleChainId) {
+            @PathVariable(RULE_CHAIN_ID) String ruleChainId) {
         return null;
     }
 
@@ -87,7 +87,7 @@ public class RuleChainController {
     @ResponseBody
     public ResponseJsonNode getLatestRuleNodeDebugInput(
             @ApiParam(name = "ruleNodeId", value = "规则节点id", required = true)
-            @PathVariable(RULE_NODE_ID) String strRuleNodeId) {
+            @PathVariable(RULE_NODE_ID) String ruleChainId) {
         return null;
     }
 

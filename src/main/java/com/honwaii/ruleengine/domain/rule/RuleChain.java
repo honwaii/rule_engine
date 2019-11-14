@@ -8,7 +8,7 @@ import lombok.Data;
 @Data
 public class RuleChain {
     @ApiModelProperty(value = "规则链id", required = false)
-    private String id;
+    private String ruleChainId;
     @ApiModelProperty(value = "所属项目id", required = true)
     private String projectId;
     @ApiModelProperty(value = "规则链名称", required = true)

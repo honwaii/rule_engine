@@ -1,19 +1,19 @@
 package com.honwaii.ruleengine.domain.api.rulenodeconfig.metadata;
 
 import com.honwaii.ruleengine.domain.api.ResponseMsg;
-import com.honwaii.ruleengine.domain.rule.nodeconfig.metadata.OriginatorAttriGetConfig;
+import com.honwaii.ruleengine.domain.rule.nodeconfig.metadata.ProjectAttriConfig;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * @ClassName ResOriginatorAttriGetConfig
+ * @ClassName ResProjectAttriConfig
  * @Description TODO
  * @Author lys1874
- * @Date 2019/11/14 19:52
+ * @Date 2019/11/14 19:54
  * @Version 1.0
  **/
 @Data
-public class ResOriginatorAttriGetConfig extends ResponseMsg {
+public class ResProjectAttrConfig extends ResponseMsg {
     @ApiModelProperty(value = "返回数据")
-    private OriginatorAttriGetConfig data;
+    private ProjectAttriConfig data;
 }

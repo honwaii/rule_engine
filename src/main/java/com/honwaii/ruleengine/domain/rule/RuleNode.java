@@ -10,7 +10,7 @@ public class RuleNode {
     private String id;
     @ApiModelProperty(value = "规则链id", required = true)
     private String ruleChainId;
-    @ApiModelProperty(value = "规则节点类型", required = true)
+    @ApiModelProperty(value = "规则节点类型, 对应规则节点配置中的type", required = true)
     private String type;
     @ApiModelProperty(value = "规则节点名称", required = true)
     private String name;

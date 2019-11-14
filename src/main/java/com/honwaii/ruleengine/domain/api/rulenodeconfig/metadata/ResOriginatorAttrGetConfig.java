@@ -1,19 +1,19 @@
 package com.honwaii.ruleengine.domain.api.rulenodeconfig.metadata;
 
 import com.honwaii.ruleengine.domain.api.ResponseMsg;
-import com.honwaii.ruleengine.domain.rule.nodeconfig.metadata.TelemetryGetConfig;
+import com.honwaii.ruleengine.domain.rule.nodeconfig.metadata.OriginatorAttriGetConfig;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * @ClassName ResTelemetryGetConfig
+ * @ClassName ResOriginatorAttriGetConfig
  * @Description TODO
  * @Author lys1874
- * @Date 2019/11/14 19:55
+ * @Date 2019/11/14 19:52
  * @Version 1.0
  **/
 @Data
-public class ResTelemetryGetConfig extends ResponseMsg {
+public class ResOriginatorAttrGetConfig extends ResponseMsg {
     @ApiModelProperty(value = "返回数据")
-    private TelemetryGetConfig data;
+    private OriginatorAttriGetConfig data;
 }
