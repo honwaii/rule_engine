@@ -1,6 +1,5 @@
 package com.honwaii.ruleengine.domain.api;
 
-import com.honwaii.ruleengine.domain.rule.RuleChain;
 import com.honwaii.ruleengine.domain.rule.SimpleRuleNode;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

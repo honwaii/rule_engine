@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 public class RuleNode {
     @ApiModelProperty(value = "规则节点id", required = false)
-    private String id;
+    private String ruleNodeId;
     @ApiModelProperty(value = "规则链id", required = true)
     private String ruleChainId;
     @ApiModelProperty(value = "规则节点类型, 对应规则节点配置中的type", required = true)
