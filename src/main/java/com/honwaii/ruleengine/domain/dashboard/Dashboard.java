@@ -21,8 +21,8 @@ public class Dashboard extends BaseInfo {
     private String name;
     @ApiModelProperty(value = "描述信息")
     private String description;
-    @ApiModelProperty(value = "配置信息")
+    @ApiModelProperty(value = "配置信息(具体由前端定义)")
     private String config;
-    @ApiModelProperty(value = "元数据")
+    @ApiModelProperty(value = "元数据信息(具体由前端定义)")
     private String metadata;
 }
