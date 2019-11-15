@@ -5,7 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 @Data
-public class RuleNode {
+public class RuleNode  {
     @ApiModelProperty(value = "规则节点id", required = false)
     private String ruleNodeId;
     @ApiModelProperty(value = "规则链id", required = true)

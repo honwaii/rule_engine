@@ -5,6 +5,9 @@ import com.honwaii.ruleengine.domain.rule.RuleChain;
 import com.honwaii.ruleengine.domain.rule.RuleChainMetaData;
 import com.honwaii.ruleengine.domain.rule.TestScript;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
@@ -21,6 +24,9 @@ public class RuleChainController {
 
     @ApiOperation(value = "根据id获取规则链")
     @RequestMapping(value = "/ruleChain/{ruleChainId}", method = RequestMethod.GET)
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "userAccount", value = "用户名", required = true, paramType = "query", dataType = "String"),
+    })
     @ResponseBody
     public ResponseRuleChain getRuleChainById(
             @ApiParam(name = "ruleChainId", value = "规则链id", required = true)
@@ -30,6 +36,9 @@ public class RuleChainController {
 
     @ApiOperation(value = "获取一条规则链中的所有信息")
     @RequestMapping(value = "/ruleChain/{ruleChainId}/metadata", method = RequestMethod.GET)
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "userAccount", value = "用户名", required = true, paramType = "query", dataType = "String"),
+    })
     @ResponseBody
     public ResponseRuleChainMetadata getRuleChainMetaData(
             @ApiParam(name = "ruleChainId", value = "规则链id", required = true)
@@ -62,6 +71,9 @@ public class RuleChainController {
 
     @ApiOperation(value = "分页获取规则链")
     @RequestMapping(value = "/ruleChains", method = RequestMethod.GET)
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "userAccount", value = "用户名", required = true, paramType = "query", dataType = "String"),
+    })
     @ResponseBody
     public ResponsePageRuleChain getRuleChains(
             @ApiParam(name = "textSearch", value = "关键字搜索内容")
@@ -75,6 +87,9 @@ public class RuleChainController {
 
     @ApiOperation(value = "删除某条规则链")
     @RequestMapping(value = "/ruleChain/{ruleChainId}", method = RequestMethod.DELETE)
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "userAccount", value = "用户名", required = true, paramType = "query", dataType = "String"),
+    })
     @ResponseStatus(value = HttpStatus.OK)
     public ResponseDel deleteRuleChain(
             @ApiParam(name = "ruleChainId", value = "规则链id", required = true)
@@ -84,6 +99,9 @@ public class RuleChainController {
 
     @ApiOperation(value = "获取某个规则节点最新的调试信息")
     @RequestMapping(value = "/ruleNode/{ruleNodeId}/debugIn", method = RequestMethod.GET)
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "userAccount", value = "用户名", required = true, paramType = "query", dataType = "String"),
+    })
     @ResponseBody
     public ResponseJsonNode getLatestRuleNodeDebugInput(
             @ApiParam(name = "ruleNodeId", value = "规则节点id", required = true)
@@ -102,6 +120,9 @@ public class RuleChainController {
 
     @ApiOperation(value = "获取对应类型的脚本信息")
     @RequestMapping(value = "/ruleChain/testScript/{scriptType}", method = RequestMethod.GET)
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "userAccount", value = "用户名", required = true, paramType = "query", dataType = "String"),
+    })
     @ResponseBody
     public ResTestScript getTestScript(
             @ApiParam(name = "scriptType", value = "脚本类型", required = true)
@@ -111,6 +132,9 @@ public class RuleChainController {
 
     @ApiOperation(value = "获取所有的规则节点类型")
     @RequestMapping(value = "/ruleChain/ruleNodes", method = RequestMethod.GET)
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "userAccount", value = "用户名", required = true, paramType = "query", dataType = "String"),
+    })
     @ResponseBody
     public ResSimpleRuleNode getRuleNodes() {
         return null;

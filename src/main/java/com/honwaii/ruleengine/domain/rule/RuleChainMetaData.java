@@ -1,12 +1,13 @@
 package com.honwaii.ruleengine.domain.rule;
 
+import com.honwaii.ruleengine.domain.BaseInfo;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
-public class RuleChainMetaData {
+public class RuleChainMetaData extends BaseInfo {
     @ApiModelProperty(value = "所属规则链id", required = true)
     private String ruleChainId;
     @ApiModelProperty(value = "第一个规则节点的索引")

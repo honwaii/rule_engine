@@ -2,11 +2,12 @@ package com.honwaii.ruleengine.domain.rule;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.JsonNode;
+import com.honwaii.ruleengine.domain.BaseInfo;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 @Data
-public class RuleChain {
+public class RuleChain extends BaseInfo {
     @ApiModelProperty(value = "规则链id", required = false)
     private String ruleChainId;
     @ApiModelProperty(value = "所属项目id", required = true)
