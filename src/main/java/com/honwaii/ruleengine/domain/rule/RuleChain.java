@@ -21,6 +21,7 @@ public class RuleChain extends BaseInfo {
     @ApiModelProperty(value = "是否开启调试模式", required = false)
     private boolean debugMode;
     @ApiModelProperty(value = "规则链配置", required = false)
+    @JsonIgnore
     private transient JsonNode configuration;
     @JsonIgnore
     private byte[] configurationBytes;

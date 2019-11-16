@@ -8,6 +8,7 @@ import com.honwaii.ruleengine.domain.api.rulenodeconfig.metadata.ResDeviceAttrGe
 import com.honwaii.ruleengine.domain.api.rulenodeconfig.metadata.ResOriginatorAttrGetConfig;
 import com.honwaii.ruleengine.domain.api.rulenodeconfig.metadata.ResOriginatorFieldsConfig;
 import com.honwaii.ruleengine.domain.api.rulenodeconfig.metadata.ResOriginatorTsConfig;
+import com.honwaii.ruleengine.domain.api.rulenodeconfig.transform.ResMsgToEmailConfig;
 import com.honwaii.ruleengine.domain.api.rulenodeconfig.transform.ResMsgTransformConfig;
 import com.honwaii.ruleengine.domain.api.rulenodeconfig.transform.ResOriginatorChangeConfig;
 import io.swagger.annotations.ApiImplicitParam;
@@ -19,9 +20,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@Slf4j
-@RestController
-@RequestMapping("/v2/ruleEngine")
+//@Slf4j
+//@RestController
+//@RequestMapping("/v2/ruleEngine")
 public class RuleNodeConfigController {
 
     @ApiOperation(value = "获取所有规则节点的配置信息")
@@ -343,4 +344,16 @@ public class RuleNodeConfigController {
     public ResRestAPIConfig getRestApiConfig() {
         return null;
     }
+
+    @ApiOperation(value = "获取\"邮件消息转换节点\"的配置")
+    @RequestMapping(value = "/ruleNode/msgToEmail", method = RequestMethod.GET)
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "userAccount", value = "用户名,前端不传，从session中获取.", required = true, paramType = "query", dataType = "String"),
+    })
+    @ResponseBody
+    public ResMsgToEmailConfig getMsgToEmailConfig() {
+        return null;
+    }
+
+
 }
